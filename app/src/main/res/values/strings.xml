@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MoodMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mood_selection">MoodSelection</string>
+    <string name="title_activity_first_questions">FirstQuestions</string>
+    <string name="title_activity_happy">Happy</string>
+    <string name="title_activity_sad">Sad</string>
+    <string name="title_activity_angry">Angry</string>
+    <string name="title_activity_excited">Excited</string>
+    <string name="title_activity_relaxed">Relaxed</string>
+    <string name="title_activity_lazy">Lazy</string>
+    <string name="title_activity_irritated">Irritated</string>
+    <string name="title_activity_hyper">Hyper</string>
+    <string name="title_activity_enraged">Enraged</string>
+</resources>

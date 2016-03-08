@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dnunez.moodme">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MoodSelection"
+            android:label="@string/title_activity_mood_selection"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.Home" />
+        </activity>
+        <activity
+            android:name=".FirstQuestions"
+            android:label="@string/title_activity_first_questions"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.Home" />
+        </activity>
+        <activity
+            android:name=".Happy"
+            android:label="@string/title_activity_happy"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.MoodSelection" />
+        </activity>
+        <activity
+            android:name=".Sad"
+            android:label="@string/title_activity_sad"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.MoodSelection" />
+        </activity>
+        <activity
+            android:name=".Angry"
+            android:label="@string/title_activity_angry"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Excited"
+            android:label="@string/title_activity_excited"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.MoodSelection" />
+        </activity>
+        <activity
+            android:name=".Relaxed"
+            android:label="@string/title_activity_relaxed"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.MoodSelection" />
+        </activity>
+        <activity
+            android:name=".Lazy"
+            android:label="@string/title_activity_lazy"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.MoodSelection" />
+        </activity>
+        <activity
+            android:name=".Irritated"
+            android:label="@string/title_activity_irritated"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.MoodSelection" />
+        </activity>
+        <activity
+            android:name=".Hyper"
+            android:label="@string/title_activity_hyper"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.MoodSelection" />
+        </activity>
+        <activity
+            android:name=".Enraged"
+            android:label="@string/title_activity_enraged"
+            android:parentActivityName=".MoodSelection"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dnunez.moodme.MoodSelection" />
+        </activity>
+    </application>
+
+</manifest>
