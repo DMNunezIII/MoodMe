@@ -13,81 +13,81 @@
     tools:context="com.example.dnunez.moodme.MoodSelection"
     tools:showIn="@layout/activity_mood_selection">
 
-    <Button android:id="@+id/firstMood"
+    <ImageButton android:id="@+id/firstMood"
         android:layout_width="106dp"
         android:layout_height="106dp"
-        android:text="Happy"
+        android:src="@drawable/happybutton"
         android:layout_alignTop="@+id/thirdMood"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="happyClicked"/>
 
-    <Button android:id="@+id/fourthMood"
+    <ImageButton android:id="@+id/fourthMood"
         android:layout_height="@dimen/size"
         android:layout_width="@dimen/size"
-        android:text="Excited"
+        android:src="@drawable/excitedbutton"
         android:layout_alignTop="@+id/fifthMood"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_gravity="left|center_vertical"
         android:onClick="excitedClicked" />
 
-    <Button android:id="@+id/sixthMood"
+    <ImageButton android:id="@+id/sixthMood"
         android:layout_height="@dimen/size"
         android:layout_width="@dimen/size"
-        android:text="Lazy"
+        android:src="@drawable/romanticbutton"
         android:layout_alignLeft="@+id/thirdMood"
         android:layout_alignStart="@+id/thirdMood"
         android:layout_gravity="right|center_vertical"
-        android:onClick="lazyClicked" />
+        android:onClick="romanticClicked" />
 
-    <Button android:id="@+id/thirdMood"
+    <ImageButton android:id="@+id/thirdMood"
         android:layout_width="@dimen/size"
         android:layout_height="@dimen/size"
         android:layout_alignParentRight="true"
-        android:text="Angry"
+        android:src="@drawable/angrybutton"
         android:layout_gravity="center_horizontal|top"
         android:onClick="angryClicked" />
 
-    <Button android:id="@+id/fifthMood"
+    <ImageButton android:id="@+id/fifthMood"
         android:layout_height="@dimen/size"
         android:layout_width="@dimen/size"
-        android:text="Relaxed"
+        android:src="@drawable/relaxedbutton"
         android:layout_gravity="center"
         android:onClick="relaxedClicked" />
 
-    <Button android:id="@+id/seventhMood"
+    <ImageButton android:id="@+id/seventhMood"
         android:layout_height="@dimen/size"
         android:layout_width="@dimen/size"
-        android:text="Irritated"
+        android:src="@drawable/irritatedbutton"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/fourthMood"
         android:layout_toEndOf="@+id/fourthMood"
         android:layout_gravity="left|bottom"
         android:onClick="irritatedClicked" />
 
-    <Button android:id="@+id/secondMood"
+    <ImageButton android:id="@+id/secondMood"
         android:layout_height="@dimen/size"
         android:layout_width="@dimen/size"
-        android:text="Sad"
+        android:src="@drawable/sadbutton"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/fifthMood"
         android:layout_alignStart="@+id/fifthMood"
         android:layout_gravity="right|top"
         android:onClick="sadClicked" />
 
-    <Button
+    <ImageButton
         android:layout_width="@dimen/size"
         android:layout_height="@dimen/size"
-        android:text="Hyper"
+        android:src="@drawable/hyperbutton"
         android:id="@+id/eigthMood"
         android:layout_gravity="center_horizontal|bottom"
         android:onClick="hyperClicked" />
 
-    <Button
+    <ImageButton
         android:layout_width="@dimen/size"
         android:layout_height="@dimen/size"
-        android:text="Enraged"
+        android:src="@drawable/crapbutton"
         android:id="@+id/ninthMood"
         android:layout_gravity="right|bottom"
         android:onClick="enragedClicked" />

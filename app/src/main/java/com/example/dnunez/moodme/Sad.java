@@ -27,7 +27,7 @@ public class Sad extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         WebView rain = new WebView(this);
-        rain.loadUrl("file:///android_asset/test3.gif");
+        rain.loadUrl("file:///android_asset/newrain.gif");
         setContentView(rain);
     }
 

@@ -8,8 +8,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/screen"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.dnunez.moodme.FirstQuestions"
     tools:showIn="@layout/activity_first_questions">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Feel Whole Today?"
+        android:id="@+id/feelWhole"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:onClick="feelWholeClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Something Pierces Your Heart?"
+        android:id="@+id/heartPierce"
+        android:layout_below="@id/feelWhole"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:onClick="heartPierceClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Feel Fire In Your Blood"
+        android:id="@+id/fireBlood"
+        android:layout_below="@+id/heartPierce"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:onClick="fireBloodClicked" />
 </RelativeLayout>

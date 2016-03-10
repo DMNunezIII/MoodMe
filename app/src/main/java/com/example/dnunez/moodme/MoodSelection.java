@@ -2,8 +2,6 @@ package com.example.dnunez.moodme;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -47,8 +45,8 @@ public class MoodSelection extends AppCompatActivity {
         Intent intent = new Intent(this, Relaxed.class);
         startActivity(intent);
     }
-    public void lazyClicked(View v){
-        Intent intent = new Intent(this, Lazy.class);
+    public void romanticClicked(View v){
+        Intent intent = new Intent(this, Romantic.class);
         startActivity(intent);
     }
     public void irritatedClicked(View v){

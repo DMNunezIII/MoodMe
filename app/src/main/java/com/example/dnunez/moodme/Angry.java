@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.webkit.WebView;
 
 public class Angry extends AppCompatActivity {
 
@@ -24,6 +25,9 @@ public class Angry extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        WebView anger = new WebView(this);
+        anger.loadUrl("file:///android_asset/aggravated.gif");
+        setContentView(anger);
     }
 
 }
