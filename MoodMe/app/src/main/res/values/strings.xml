@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MoodMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mood_selection">MoodSelection</string>
+    <string name="title_activity_first_questions">FirstQuestions</string>
+    <string name="title_activity_happy">Happy</string>
+</resources>
