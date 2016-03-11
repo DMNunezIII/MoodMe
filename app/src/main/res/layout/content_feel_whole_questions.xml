@@ -19,7 +19,7 @@
         android:id="@+id/resolveSteeled"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="55dp"
         android:onClick="resolveSteeledClicked" />
 
     <Button
@@ -29,9 +29,8 @@
         android:id="@+id/wish"
         android:layout_below="@+id/resolveSteeled"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="61dp"
-        android:onClick="wishClicked"
-        android:nestedScrollingEnabled="false" />
+        android:layout_marginTop="86dp"
+        android:onClick="wishClicked"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -40,6 +39,6 @@
         android:id="@+id/unsure"
         android:layout_below="@+id/wish"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="80dp"
         android:onClick="unsureClicked" />
 </RelativeLayout>

@@ -19,7 +19,7 @@
         android:id="@+id/gnawing"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="91dp"
+        android:layout_marginTop="55dp"
         android:onClick="gnawingClicked" />
 
     <Button
@@ -27,7 +27,8 @@
         android:layout_height="wrap_content"
         android:text="Your Skin Is Hot?"
         android:id="@+id/hotSkin"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/gnawing"
+        android:layout_marginTop="86dp"
         android:layout_centerHorizontal="true"
         android:onClick="hotSkinClicked" />
 
@@ -36,8 +37,8 @@
         android:layout_height="wrap_content"
         android:text="Your Rage Is Beyond Your Control?"
         android:id="@+id/rage"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/hotSkin"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="65dp"
+        android:layout_marginTop="80dp"
         android:onClick="rageClicked" />
 </RelativeLayout>

@@ -11,6 +11,7 @@
         <activity
             android:name=".Home"
             android:label="@string/app_name"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +22,7 @@
         <activity
             android:name=".MoodSelection"
             android:label="@string/title_activity_mood_selection"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".Home"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -30,6 +32,7 @@
         <activity
             android:name=".FirstQuestions"
             android:label="@string/title_activity_first_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".Home"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -39,6 +42,7 @@
         <activity
             android:name=".Happy"
             android:label="@string/title_activity_happy"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -48,6 +52,7 @@
         <activity
             android:name=".Sad"
             android:label="@string/title_activity_sad"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -57,11 +62,13 @@
         <activity
             android:name=".Angry"
             android:label="@string/title_activity_angry"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Excited"
             android:label="@string/title_activity_excited"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -71,6 +78,7 @@
         <activity
             android:name=".Relaxed"
             android:label="@string/title_activity_relaxed"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -80,6 +88,7 @@
         <activity
             android:name=".Romantic"
             android:label="@string/title_activity_lazy"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -89,6 +98,7 @@
         <activity
             android:name=".Irritated"
             android:label="@string/title_activity_irritated"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -98,6 +108,7 @@
         <activity
             android:name=".Hyper"
             android:label="@string/title_activity_hyper"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -107,6 +118,7 @@
         <activity
             android:name=".Enraged"
             android:label="@string/title_activity_enraged"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".MoodSelection"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -116,6 +128,7 @@
         <activity
             android:name=".FeelWholeQuestions"
             android:label="@string/title_activity_feel_whole_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".FirstQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -125,6 +138,7 @@
         <activity
             android:name=".HeartPierceQuestions"
             android:label="@string/title_activity_heart_pierce_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".FirstQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -134,6 +148,7 @@
         <activity
             android:name=".FireBloodQuestions"
             android:label="@string/title_activity_fire_blood_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".FirstQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -143,6 +158,7 @@
         <activity
             android:name=".ResolveSteeledQuestions"
             android:label="@string/title_activity_resolve_steeled_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".FeelWholeQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -152,6 +168,7 @@
         <activity
             android:name=".WishQuestions"
             android:label="@string/title_activity_wish_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".FeelWholeQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -161,6 +178,7 @@
         <activity
             android:name=".UnsureQuestions"
             android:label="@string/title_activity_unsure_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".FeelWholeQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -170,6 +188,7 @@
         <activity
             android:name=".SoulCryingQuestions"
             android:label="@string/title_activity_soul_crying_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".HeartPierceQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -179,6 +198,7 @@
         <activity
             android:name=".GnawingQuestions"
             android:label="@string/title_activity_gnawing_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".HeartPierceQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -188,6 +208,7 @@
         <activity
             android:name=".HotSkinQuestions"
             android:label="@string/title_activity_hot_skin_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".FireBloodQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -197,6 +218,7 @@
         <activity
             android:name=".RageQuestions"
             android:label="@string/title_activity_rage_questions"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".FireBloodQuestions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -206,62 +228,77 @@
         <activity
             android:name=".Accomplished"
             android:label="@string/title_activity_accomplished"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Amused"
             android:label="@string/title_activity_amused"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Determined"
             android:label="@string/title_activity_determined"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Disappointed"
             android:label="@string/title_activity_disappointed"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Hopeful"
             android:label="@string/title_activity_hopeful"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Shocked"
             android:label="@string/title_activity_shocked"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Melancholy"
             android:label="@string/title_activity_melancholy"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Depressed"
             android:label="@string/title_activity_depressed"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Guilty"
             android:label="@string/title_activity_guilty"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Frustrated"
             android:label="@string/title_activity_frustrated"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Cranky"
             android:label="@string/title_activity_cranky"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Brooding"
             android:label="@string/title_activity_brooding"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Aggravated"
             android:label="@string/title_activity_aggravated"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PissedOff"
             android:label="@string/title_activity_pissed_off"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Stressed"
             android:label="@string/title_activity_stressed"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

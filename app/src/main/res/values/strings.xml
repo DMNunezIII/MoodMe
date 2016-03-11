@@ -2,7 +2,7 @@
     <string name="app_name">MoodMe</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_mood_selection">MoodSelection</string>
-    <string name="title_activity_first_questions">FirstQuestions</string>
+    <string name="title_activity_first_questions">@string/topMessage</string>
     <string name="title_activity_happy">Happy</string>
     <string name="title_activity_sad">Sad</string>
     <string name="title_activity_angry">Angry</string>
@@ -12,9 +12,9 @@
     <string name="title_activity_irritated">Irritated</string>
     <string name="title_activity_hyper">Hyper</string>
     <string name="title_activity_enraged">Enraged</string>
-    <string name="title_activity_feel_whole_questions">feelWholeQuestions</string>
-    <string name="title_activity_heart_pierce_questions">HeartPierceQuestions</string>
-    <string name="title_activity_fire_blood_questions">FireBloodQuestions</string>
+    <string name="title_activity_feel_whole_questions">@string/topMessage</string>
+    <string name="title_activity_heart_pierce_questions">@string/topMessage</string>
+    <string name="title_activity_fire_blood_questions">@string/topMessage</string>
     <string name="soulGnawQuestion">Something Is Gnawing At You?</string>
     <string name="unsureQuestion">You Are Unsure Of Something?</string>
     <string name="concentrationQuestion">Your Concentration Is Needed?</string>
@@ -23,13 +23,13 @@
     <string name="knowQuestion">You Know Of Something?</string>
     <string name="restQuestion">You Cannot Rest?</string>
     <string name="eruptingBloodQuestion">Your Blood Is Erupting?</string>
-    <string name="title_activity_resolve_steeled_questions">ResolveSteeledQuestions</string>
-    <string name="title_activity_wish_questions">WishQuestions</string>
-    <string name="title_activity_unsure_questions">UnsureQuestions</string>
-    <string name="title_activity_soul_crying_questions">SoulCryingQuestions</string>
-    <string name="title_activity_gnawing_questions">GnawingQuestions</string>
-    <string name="title_activity_hot_skin_questions">HotSkinQuestions</string>
-    <string name="title_activity_rage_questions">RageQuestions</string>
+    <string name="title_activity_resolve_steeled_questions">@string/topMessage</string>
+    <string name="title_activity_wish_questions">@string/topMessage</string>
+    <string name="title_activity_unsure_questions">@string/topMessage</string>
+    <string name="title_activity_soul_crying_questions">@string/topMessage</string>
+    <string name="title_activity_gnawing_questions">@string/topMessage</string>
+    <string name="title_activity_hot_skin_questions">@string/topMessage</string>
+    <string name="title_activity_rage_questions">@string/topMessage</string>
     <string name="title_activity_accomplished">Accomplished</string>
     <string name="title_activity_amused">Amused</string>
     <string name="title_activity_determined">Determined</string>
@@ -45,4 +45,6 @@
     <string name="title_activity_aggravated">Aggravated</string>
     <string name="title_activity_pissed_off">PissedOff</string>
     <string name="title_activity_stressed">Stressed</string>
+    <string name="topMessage">Home</string>
+    <string name="orientationMessage">Trying to set the mood, turn your phone around.</string>
 </resources>

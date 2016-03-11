@@ -1,14 +1,18 @@
 package com.example.dnunez.moodme;
 
+import android.content.res.Configuration;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.webkit.WebView;
 
 public class Accomplished extends AppCompatActivity {
-
+    MediaPlayer song;
+    WebView accomplish;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +28,23 @@ public class Accomplished extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        accomplish = new WebView(this);
+        accomplish.loadUrl("file:///android_asset/accomplished.gif");
+        setContentView(accomplish);
+        song = MediaPlayer.create(this, R.raw.accompishedimastar);
+        song.start();
+    }
+    protected void onStop(){
+        super.onStop();
+        song.stop();
+    }
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.landscape_message);
+        }else if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            setContentView(accomplish);
+        }
     }
 
 }

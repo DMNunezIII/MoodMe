@@ -19,7 +19,7 @@
         android:id="@+id/resloved"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="55dp"
         android:onClick="resolvedClicked" />
 
     <Button
@@ -27,7 +27,8 @@
         android:layout_height="wrap_content"
         android:text="@string/restQuestion"
         android:id="@+id/rest"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/resloved"
+        android:layout_marginTop="86dp"
         android:layout_centerHorizontal="true"
         android:onClick="restClicked" />
 
@@ -36,8 +37,8 @@
         android:layout_height="wrap_content"
         android:text="@string/knowQuestion"
         android:id="@+id/know"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rest"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="78dp"
+        android:layout_marginTop="80dp"
         android:onClick="knowClicked" />
 </RelativeLayout>

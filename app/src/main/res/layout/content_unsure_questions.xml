@@ -19,7 +19,7 @@
         android:id="@+id/dontKnow"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="55dp"
         android:onClick="dontKnowClicked" />
 
     <Button
@@ -27,7 +27,8 @@
         android:layout_height="wrap_content"
         android:text="@string/feelingQuestion"
         android:id="@+id/feeling"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/dontKnow"
+        android:layout_marginTop="86dp"
         android:layout_centerHorizontal="true"
         android:onClick="feelingClicked" />
 
@@ -36,8 +37,8 @@
         android:layout_height="wrap_content"
         android:text="@string/believeQuestion"
         android:id="@+id/believe"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/feeling"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="80dp"
         android:onClick="believeClicked" />
 </RelativeLayout>

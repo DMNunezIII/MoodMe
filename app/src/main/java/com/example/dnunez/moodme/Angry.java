@@ -1,5 +1,7 @@
 package com.example.dnunez.moodme;
 
+import android.content.res.Configuration;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,7 +11,8 @@ import android.view.View;
 import android.webkit.WebView;
 
 public class Angry extends AppCompatActivity {
-
+    MediaPlayer song;
+    WebView anger;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +28,23 @@ public class Angry extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        WebView anger = new WebView(this);
-        anger.loadUrl("file:///android_asset/aggravated.gif");
+        anger = new WebView(this);
+        anger.loadUrl("file:///android_asset/anger.gif");
         setContentView(anger);
+        song = MediaPlayer.create(this, R.raw.angrylinkin);
+        song.start();
+    }
+    protected void onStop(){
+        super.onStop();
+        song.stop();
+    }
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.landscape_message);
+        }else if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            setContentView(anger);
+        }
     }
 
 }

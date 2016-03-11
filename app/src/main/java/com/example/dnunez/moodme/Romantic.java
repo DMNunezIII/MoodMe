@@ -1,5 +1,6 @@
 package com.example.dnunez.moodme;
 
+import android.content.res.Configuration;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,6 +12,7 @@ import android.webkit.WebView;
 
 public class Romantic extends AppCompatActivity{
     MediaPlayer kennyG;
+    WebView fire;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,11 +29,23 @@ public class Romantic extends AppCompatActivity{
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        WebView fire = new WebView(this);
+        fire = new WebView(this);
         fire.loadUrl("file:///android_asset/newfire.gif");
         setContentView(fire);
         kennyG = MediaPlayer.create(this, R.raw.kennyg);
         kennyG.start();
+    }
+    protected void onStop(){
+        super.onStop();
+        kennyG.stop();
+    }
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.landscape_message);
+        }else if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            setContentView(fire);
+        }
     }
 
 

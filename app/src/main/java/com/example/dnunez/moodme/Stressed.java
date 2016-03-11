@@ -1,14 +1,18 @@
 package com.example.dnunez.moodme;
 
+import android.content.res.Configuration;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.webkit.WebView;
 
 public class Stressed extends AppCompatActivity {
-
+    MediaPlayer song;
+    WebView stress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +28,23 @@ public class Stressed extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        stress = new WebView(this);
+        stress.loadUrl("file:///android_asset/stressed.gif");
+        setContentView(stress);
+        song = MediaPlayer.create(this, R.raw.stressedalwayslook);
+        song.start();
+    }
+    protected void onStop(){
+        super.onStop();
+        song.stop();
+    }
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.landscape_message);
+        }else if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            setContentView(stress);
+        }
     }
 
 }

@@ -1,14 +1,18 @@
 package com.example.dnunez.moodme;
 
+import android.content.res.Configuration;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.webkit.WebView;
 
 public class Irritated extends AppCompatActivity {
-
+    MediaPlayer song;
+    WebView irritate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +28,24 @@ public class Irritated extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        irritate = new WebView(this);
+        irritate.loadUrl("file:///android_asset/irritated.gif");
+        setContentView(irritate);
+        song = MediaPlayer.create(this, R.raw.irritatedgunsandroses);
+        song.start();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+    protected void onStop(){
+        super.onStop();
+        song.stop();
+    }
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.landscape_message);
+        }else if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            setContentView(irritate);
+        }
     }
 
 }

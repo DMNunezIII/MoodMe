@@ -1,6 +1,7 @@
 package com.example.dnunez.moodme;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -60,5 +61,13 @@ public class MoodSelection extends AppCompatActivity {
     public void enragedClicked(View v){
         Intent intent = new Intent(this, Enraged.class);
         startActivity(intent);
+    }
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.landscape_message);
+        }else if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            setContentView(R.layout.activity_mood_selection);
+        }
     }
 }

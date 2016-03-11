@@ -19,7 +19,7 @@
         android:id="@+id/shell"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="55dp"
         android:onClick="shellClicked" />
 
     <Button
@@ -27,7 +27,8 @@
         android:layout_height="wrap_content"
         android:text="@string/knowQuestion"
         android:id="@+id/know"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/shell"
+        android:layout_marginTop="86dp"
         android:layout_centerHorizontal="true"
         android:onClick="knowClicked" />
 
@@ -36,8 +37,8 @@
         android:layout_height="wrap_content"
         android:text="@string/feelingQuestion"
         android:id="@+id/feeling"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/know"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="82dp"
+        android:layout_marginTop="80dp"
         android:onClick="feelingClicked" />
 </RelativeLayout>
